@@ -8,3 +8,4 @@ Each project is stored in its own branch.
 # Current Projects
 - [Bin2Dec](https://github.com/Threqt1/JavaFXProjects/tree/Bin2Dec)
 - [BorderRadiusPreviewer](https://github.com/Threqt1/JavaFXProjects/tree/BorderRadiusPreviewer)
+- [Minesweeper](https://github.com/Threqt1/JavaFXProjects/tree/Minesweeper)
