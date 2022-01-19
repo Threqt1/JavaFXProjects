@@ -1,5 +1,7 @@
 # Minesweeper
+
 A surprisingly useful project that cemented my knowledge of JavaFX
+- It was made using JavaFX 16 with Eclipse Temurin SDK 16.
 
 # Credits
 - [This Repository](https://github.com/rwtodd/Java.Minesweeper) helped a lot with getting me started
