@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" style="-fx-background-color: rgb(167, 217, 72);" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="practice.javafx.minesweeperexe.MinesweeperWinController">
+   <center>
+      <StackPane BorderPane.alignment="CENTER">
+         <ImageView fitHeight="227.0" fitWidth="270.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@img/win_screen.png"/>
+         </ImageView>
+         <ImageView fitHeight="89.0" fitWidth="73.0" pickOnBounds="true" preserveRatio="true"
+                    StackPane.alignment="TOP_LEFT">
+            <StackPane.margin>
+               <Insets left="20.0" top="10.0"/>
+            </StackPane.margin>
+            <Image url="@img/clock_icon.png"/>
+         </ImageView>
+         <ImageView fitHeight="89.0" fitWidth="73.0" pickOnBounds="true" preserveRatio="true"
+                    StackPane.alignment="TOP_RIGHT">
+            <StackPane.margin>
+               <Insets right="20.0" top="10.0"/>
+            </StackPane.margin>
+            <Image url="@img/trophy_icon.png"/>
+         </ImageView>
+         <Label fx:id="timeTaken" alignment="CENTER" contentDisplay="CENTER" text="___" textFill="WHITE"
+                StackPane.alignment="CENTER">
+            <font>
+               <Font name="Consolas Bold" size="30.0"/>
+            </font>
+            <StackPane.margin>
+               <Insets bottom="20.0" right="135.0"/>
+            </StackPane.margin>
+         </Label>
+         <Label fx:id="bestTime" alignment="CENTER" contentDisplay="CENTER" layoutX="43.0" layoutY="96.0" text="___"
+                textFill="WHITE">
+            <font>
+               <Font name="Consolas Bold" size="30.0"/>
+            </font>
+            <StackPane.margin>
+               <Insets bottom="20.0" left="135.0"/>
+            </StackPane.margin>
+         </Label>
+      </StackPane>
+   </center>
+   <bottom>
+      <Button fx:id="newGame" mnemonicParsing="false" onAction="#newGameRequested" style="-fx-background-color: rgb(142, 204, 57);" text="New Game" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="6.0" top="6.0" />
+         </BorderPane.margin>
+         <font>
+            <Font name="Consolas Bold" size="13.0" />
+         </font>
+      </Button>
+   </bottom>
+</BorderPane>

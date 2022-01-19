@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#startNewGame" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="practice.javafx.minesweeperexe.MinesweeperMainController">
+   <center>
+      <ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" maxHeight="1.7976931348623157E308"
+                  maxWidth="1.7976931348623157E308" vbarPolicy="NEVER" BorderPane.alignment="CENTER">
+         <StackPane fx:id="gameOverlays" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+            <Pane fx:id="gamePane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"/>
+         </StackPane>
+      </ScrollPane>
+   </center>
+   <top>
+      <FlowPane alignment="CENTER" prefHeight="28.0" prefWidth="400.0" style="-fx-background-color: &quot;4a752c&quot;;"
+                BorderPane.alignment="CENTER">
+         <Label fx:id="statusLabel" alignment="CENTER" text="Flags: 0 | Time: 0" textFill="WHITE">
+            <font>
+               <Font name="Consolas" size="12.0"/>
+            </font>
+         </Label>
+      </FlowPane>
+   </top>
+</BorderPane>
