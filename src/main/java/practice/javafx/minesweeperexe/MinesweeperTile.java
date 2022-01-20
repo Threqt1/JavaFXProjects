@@ -125,6 +125,7 @@ public class MinesweeperTile extends StackPane {
     }
 
     public void renderTile() {
+        getChildren().clear();
         setLayoutX(x);
         setLayoutY(y);
 

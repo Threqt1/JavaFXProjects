@@ -104,7 +104,9 @@ public class MinesweeperMainController implements Initializable {
         while (bombsCreated < numberOfFlags) {
             int x = random.nextInt(boardSizeX);
             int y = random.nextInt(boardSizeY);
-            minefield.get(x, y).setBomb();
+            MinesweeperTile tile = minefield.get(x, y);
+            if (tile.isBomb()) continue;
+            tile.setBomb();
             bombTiles.add(new int[]{x, y});
             bombsCreated++;
         }

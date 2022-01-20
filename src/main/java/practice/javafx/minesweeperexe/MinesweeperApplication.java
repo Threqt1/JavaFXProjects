@@ -19,7 +19,6 @@ public class MinesweeperApplication extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
         Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("MinesweeperMain.fxml")));
-        //root.getStylesheets().add(Objects.requireNonNull(getClass().getResource("MinesweeperMain.css")).toExternalForm());
         flag = new Image(Objects.requireNonNull(getClass().getResource("img/flag_icon.png")).toExternalForm());
         wrongFlag = new Image(Objects.requireNonNull(getClass().getResource("img/incorrect_flag.png")).toExternalForm());
         primaryStage.setTitle("Minesweeper");

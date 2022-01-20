@@ -15,6 +15,10 @@ public class MinesweeperMinefield {
         amountOfFlags = numberOfFlags;
     }
 
+    public boolean isInGrid(int x, int y) {
+        return (x >= 0 && x < spanX) || (y >= 0 && y < spanY);
+    }
+
     public boolean isGameWon(int amountFlagged) {
         return amountFlipped == (spanX * spanY) - amountOfFlags && amountFlagged <= 0;
     }
