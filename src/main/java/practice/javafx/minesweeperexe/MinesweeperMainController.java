@@ -94,6 +94,9 @@ public class MinesweeperMainController implements Initializable {
                             flagTiles.removeIf(coords -> coords[0] == finalX && coords[1] == finalY);
                             numberOfFlags++;
                         }
+                        if (minefield.isGameWon(numberOfFlags)) {
+                            stopGameWin();
+                        }
                         statusLabel.setText("Flags: " + numberOfFlags + " | Time: " + time);
                     }
                 });
